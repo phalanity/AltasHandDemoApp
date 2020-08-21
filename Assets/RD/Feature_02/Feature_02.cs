@@ -143,7 +143,7 @@ public class Feature_02 : MonoBehaviour
 		for (int i = 0; i < newObject.transform.childCount; i++)
 		{
 			Transform newObjTransform = newObject.transform.GetChild(i);
-			newObjTransform.position += new Vector3(0, 0.01f, 0);
+			newObjTransform.localPosition += new Vector3(0, 1f, 0);
 		}
 
 		HandPrefabObject newHandPrefabObject = new HandPrefabObject();
