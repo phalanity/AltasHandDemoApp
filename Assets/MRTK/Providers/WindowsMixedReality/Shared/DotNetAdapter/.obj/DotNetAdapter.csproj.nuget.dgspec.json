@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {}
+    "D:\\Workspace\\louiekuo\\_Github\\_Test\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
+    "D:\\Workspace\\louiekuo\\_Github\\_Test\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+        "projectUniqueName": "D:\\Workspace\\louiekuo\\_Github\\_Test\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
         "projectName": "DotNetAdapter",
-        "projectPath": "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+        "projectPath": "D:\\Workspace\\louiekuo\\_Github\\_Test\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
         "packagesPath": "C:\\Users\\Username\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\.obj\\",
+        "outputPath": "D:\\Workspace\\louiekuo\\_Github\\_Test\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\.obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\NuGet.Config",
+          "D:\\Workspace\\louiekuo\\_Github\\_Test\\AltasHandDemoApp\\Assets\\NuGet.Config",
           "C:\\Users\\Username\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

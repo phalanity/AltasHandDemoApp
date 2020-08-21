@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RD/Feature_01/Scene_Feature_01.unity
+- path: Assets/RD/Feature_02/Scene_Feature_02.unity
   isLoaded: 1
   isActive: 1
