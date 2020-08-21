@@ -8,3 +8,13 @@ D:\Workspace\louiekuo\_Unity\HololensTest_Unity2018\Assets\MRTK\Providers\Window
 D:\Workspace\louiekuo\_Unity\HololensTest_Unity2018\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\System.Drawing.Primitives.dll
 D:\Workspace\louiekuo\_Unity\HololensTest_Unity2018\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csprojAssemblyReference.cache
 D:\Workspace\louiekuo\_Unity\HololensTest_Unity2018\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csproj.CopyComplete
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef.meta
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs.meta
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll.meta
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT.dll
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\System.Drawing.Primitives.dll
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csprojAssemblyReference.cache
+D:\workspace\Unity\AltasHandDemoApp\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csproj.CopyComplete

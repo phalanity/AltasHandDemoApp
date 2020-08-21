@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EfTD3RrwZrGZVran5xMe800C2iiDPx6AD8KKzh8ASE3In4q+YKclXwP9aWStNHxyUyJO2bPTlTAG0VVsjmPk9A==",
+  "dgSpecHash": "zq1xsLgIlGNI3YbzutwptDfn5dZ1o99OIQySLr+8Lnk1tS3EN8q6fpP3nka4cAUBYtLOL/ZqRVwxGmFsxMMNNA==",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\louiekuo\\_Unity\\HololensTest_Unity2018\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+  "projectFilePath": "D:\\workspace\\Unity\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Username\\.nuget\\packages\\microsoft.windows.mixedreality.dotnetwinrt\\0.5.1049\\microsoft.windows.mixedreality.dotnetwinrt.0.5.1049.nupkg.sha512",
-    "C:\\Users\\Username\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\system.drawing.primitives.4.3.0.nupkg.sha512"
+    "C:\\Users\\123\\.nuget\\packages\\microsoft.windows.mixedreality.dotnetwinrt\\0.5.1049\\microsoft.windows.mixedreality.dotnetwinrt.0.5.1049.nupkg.sha512",
+    "C:\\Users\\123\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\system.drawing.primitives.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

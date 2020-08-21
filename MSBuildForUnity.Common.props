@@ -2,9 +2,9 @@
   
   <!-- These are specific to this Unity project and can't be overridden -->
   <PropertyGroup>
-    <UnityProjectAssetsPath>D:\Workspace\louiekuo\_Unity\HololensTest_Unity2018\Assets</UnityProjectAssetsPath>
+    <UnityProjectAssetsPath>D:\workspace\Unity\AltasHandDemoApp\Assets</UnityProjectAssetsPath>
     
-    <_MSBuildForUnityGeneratedOutputDirectory>D:\Workspace\louiekuo\_Unity\HololensTest_Unity2018\MSBuild</_MSBuildForUnityGeneratedOutputDirectory>
+    <_MSBuildForUnityGeneratedOutputDirectory>D:\workspace\Unity\AltasHandDemoApp\MSBuild</_MSBuildForUnityGeneratedOutputDirectory>
     <MSBuildForUnityGeneratedProjectDirectory>$(_MSBuildForUnityGeneratedOutputDirectory)\Projects</MSBuildForUnityGeneratedProjectDirectory>
   </PropertyGroup>
   
@@ -23,7 +23,7 @@
     
     <UnityMajorVersion>2018</UnityMajorVersion>
     <UnityMinorVersion>4</UnityMinorVersion>
-    <UnityEditorInstallPath>D:\Program Files\2018.4.25f1\Editor</UnityEditorInstallPath>
+    <UnityEditorInstallPath>C:\Program Files\Unity\Hub\Editor\2018.4.25f1\Editor</UnityEditorInstallPath>
   </PropertyGroup>
   
   <PropertyGroup>

@@ -36,7 +36,7 @@ public class Feature_02 : MonoBehaviour
 		FindHandsObjectRoot(out leftHand, out rightHand);
 
 		mTimePassed += Time.deltaTime;
-		if(mTimePassed >= gTimeSpawnIntervalInSecond)
+		if (mTimePassed >= gTimeSpawnIntervalInSecond)
 		{
 			if (mStartSpawing)
 			{
@@ -53,25 +53,25 @@ public class Feature_02 : MonoBehaviour
 			mTimePassed = 0;
 		}
 
-		if(leftHand != null && !mFIsLeftHandScanned)
+		if (leftHand != null && !mFIsLeftHandScanned)
 		{
 			Debug.Log("left hand show up");
 			mFIsLeftHandScanned = true;
 		}
-		if(leftHand == null && mFIsLeftHandScanned)
+		if (leftHand == null && mFIsLeftHandScanned)
 		{
 			Debug.Log("left hand disappear");
 			mFIsLeftHandScanned = false;
 		}
 
-		foreach(string key in mMapLeftHandSpawnedPrefabs.Keys)
+		foreach (string key in mMapLeftHandSpawnedPrefabs.Keys)
 		{
-			if(leftHand != null)
+			if (leftHand != null)
 			{
 				Transform root = leftHand.transform.Find(key);
-				foreach(HandPrefabObject obj in mMapLeftHandSpawnedPrefabs[key])
+				foreach (HandPrefabObject obj in mMapLeftHandSpawnedPrefabs[key])
 				{
-					obj.Prefab.transform.position = root.transform.position;
+					obj.Prefab.transform.position = root.transform.position;//0820
 					obj.Prefab.transform.rotation = root.transform.rotation;
 					if (obj.IsInside)
 					{
@@ -88,7 +88,7 @@ public class Feature_02 : MonoBehaviour
 				Transform root = rightHand.transform.Find(key);
 				foreach (HandPrefabObject obj in mMapRightHandSpawnedPrefabs[key])
 				{
-					obj.Prefab.transform.position = root.transform.position;
+					obj.Prefab.transform.position = root.transform.position + new Vector3(0, 0.01f, 0);
 					obj.Prefab.transform.rotation = root.transform.rotation;
 					if (obj.IsInside)
 					{
@@ -126,11 +126,11 @@ public class Feature_02 : MonoBehaviour
 
 	void SpawnPrefabOnHand(GameObject Hand, bool IsLeftHand)
 	{
-		if(Hand == null)
+		if (Hand == null)
 		{
 			return;
 		}
-		if(mPrefabsAmount >= gPrefabsAmountLimit)
+		if (mPrefabsAmount >= gPrefabsAmountLimit)
 		{
 			return;
 		}
@@ -140,6 +140,11 @@ public class Feature_02 : MonoBehaviour
 		GameObject targetPlace = Hand.transform.GetChild(targetPlaceIndex).gameObject;
 
 		GameObject newObject = Instantiate(gPrefabs[targetPrefabIndex], targetPlace.transform.position, targetPlace.transform.rotation);
+		for (int i = 0; i < newObject.transform.childCount; i++)
+		{
+			Transform newObjTransform = newObject.transform.GetChild(i);
+			newObjTransform.position += new Vector3(0, 0.01f, 0);
+		}
 
 		HandPrefabObject newHandPrefabObject = new HandPrefabObject();
 		newHandPrefabObject.Prefab = newObject;
@@ -176,9 +181,9 @@ public class Feature_02 : MonoBehaviour
 
 	public void ClearAll()
 	{
-		foreach(string key in mMapLeftHandSpawnedPrefabs.Keys)
+		foreach (string key in mMapLeftHandSpawnedPrefabs.Keys)
 		{
-			foreach(HandPrefabObject obj in mMapLeftHandSpawnedPrefabs[key])
+			foreach (HandPrefabObject obj in mMapLeftHandSpawnedPrefabs[key])
 			{
 				Destroy(obj.Prefab);
 			}

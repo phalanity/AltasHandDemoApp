@@ -8,6 +8,8 @@ public class Feature_03 : MonoBehaviour
 	public GameObject gSlingShotPrefab;
 	public GameObject gProjectilePrefab;
 
+	public float gVelocity = 500;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -25,6 +27,7 @@ public class Feature_03 : MonoBehaviour
 		GameObject rightHand = null;
 		FindHandsObjectRoot(out leftHand, out rightHand);
 
+
 		if (leftHand != null)
 		{
 			GameObject pinkyKnuckle = null;
@@ -37,9 +40,12 @@ public class Feature_03 : MonoBehaviour
 
 				if (pinkyKnuckle != null)
 				{
+
 					mSlingShot = Instantiate(gSlingShotPrefab, pinkyKnuckle.transform.position, pinkyKnuckle.transform.rotation);
-					mSlingShot.transform.parent = pinkyKnuckle.transform;
+					//mSlingShot.transform.parent = pinkyKnuckle.transform;					
 					Debug.Log("spawn slingshot");
+
+
 				}
 			}
 			if (!CheckIfCloseHand(leftHand) && mFIsLeftHandClosed)
@@ -49,6 +55,13 @@ public class Feature_03 : MonoBehaviour
 
 				Destroy(mSlingShot);
 				mSlingShot = null;
+			}
+
+			// sync the position of slingshot
+			if (mSlingShot != null && pinkyKnuckle != null)
+			{
+				mSlingShot.transform.position = Vector3.Lerp(mSlingShot.transform.position, pinkyKnuckle.transform.position, Time.deltaTime * 10);
+				mSlingShot.transform.rotation = Quaternion.Lerp(mSlingShot.transform.rotation, pinkyKnuckle.transform.rotation, Time.deltaTime * 10);
 			}
 		}
 		else
@@ -60,6 +73,8 @@ public class Feature_03 : MonoBehaviour
 				mFIsLeftHandClosed = false;
 			}
 		}
+
+
 
 		if (rightHand != null)
 		{
@@ -74,42 +89,83 @@ public class Feature_03 : MonoBehaviour
 					FindJoint(rightHand, "IndexTip", out indexTip);
 					if (indexTip != null)
 					{
-						/*if (mProjectile != null)
-						{
-							Destroy(mProjectile);
-							mProjectile = null;
-						}*/
 
-						mProjectile = Instantiate(gProjectilePrefab, indexTip.transform.position, indexTip.transform.rotation);
-						mProjectile.transform.parent = indexTip.transform;
-						Debug.Log("spawn projectile");
+						GameObject fakeProjectileball = GameObject.Find("Projectileball");
+						if ((indexTip.transform.position - fakeProjectileball.transform.position).magnitude < 0.05)
+						{
+
+							/*if (mProjectile != null)
+							{
+								Destroy(mProjectile);
+								mProjectile = null;
+							}*/
+
+							//mProjectile = Instantiate(gProjectilePrefab, indexTip.transform.position, indexTip.transform.rotation);
+							//mProjectile.transform.parent = indexTip.transform;
+
+
+							mProjectile = Instantiate(gProjectilePrefab, indexTip.transform.position, indexTip.transform.rotation);
+							//mProjectile.transform.position = indexTip.transform.position;
+							//mProjectile.transform.rotation = indexTip.transform.rotation;
+
+							GameObject.Find("Projectileball").GetComponent<MeshRenderer>().enabled = false;
+							Debug.Log("spawn projectile");
+						}
 					}
 				}
 
 				if (!CheckIfGrab(rightHand) && mFIsRightHandGrab)
 				{
+
 					Debug.Log("open right hand");
 					mFIsRightHandGrab = false;
 
 					if (mProjectile != null)
 					{
 						mProjectile.transform.parent = null;
-
 						Rigidbody body = mProjectile.GetComponent(typeof(Rigidbody)) as Rigidbody;
 						body.useGravity = true;
-						body.AddForce(((mSlingShot.transform.position - (mSlingShot.transform.right.normalized*-0.21f)) - mProjectile.transform.position) * 300);
+						body.AddForce(((mSlingShot.transform.position - (mSlingShot.transform.right.normalized * -0.21f)) - mProjectile.transform.position) * gVelocity);
+						GameObject.Find("Projectileball").GetComponent<MeshRenderer>().enabled = true;
+						mProjectile = null;
+					}
+				}
+
+				if (mProjectile != null && mFIsRightHandGrab)
+				{
+					GameObject indexTip = null;
+					FindJoint(rightHand, "IndexTip", out indexTip);
+					if (indexTip != null)
+					{
+						mProjectile.transform.position = indexTip.transform.position;
+						mProjectile.transform.rotation = indexTip.transform.rotation;
 					}
 				}
 			}
 		}
 		else
 		{
-			if (mProjectile != null)
+			//Projectile over eyesight 
+			Debug.Log("right hand not detected");
+			// has Projectile and  RightHandGrab
+			if (mProjectile != null && mFIsRightHandGrab)
 			{
+				Debug.Log("right hand disappear and projectile !null");
 				mFIsRightHandGrab = false;
+
+				//mProjectile.transform.parent = null;
+
+				Rigidbody body = mProjectile.GetComponent(typeof(Rigidbody)) as Rigidbody;
+				body.useGravity = true;
+				body.AddForce(((mSlingShot.transform.position - (mSlingShot.transform.right.normalized * -0.21f)) - mProjectile.transform.position) * gVelocity);
+				GameObject.Find("Projectileball").GetComponent<MeshRenderer>().enabled = true;
+				Debug.Log(mProjectile.transform.position);
+			}
+			else
+			{
+				Debug.Log("projectile null");
 			}
 		}
-
 	}
 
 
