@@ -2,9 +2,9 @@
   
   <!-- These are specific to this Unity project and can't be overridden -->
   <PropertyGroup>
-    <UnityProjectAssetsPath>D:\workspace\Unity\AltasHandDemoApp\Assets</UnityProjectAssetsPath>
+    <UnityProjectAssetsPath>D:\Workspace\louiekuo\_Github\AltasHandDemoApp\Assets</UnityProjectAssetsPath>
     
-    <_MSBuildForUnityGeneratedOutputDirectory>D:\workspace\Unity\AltasHandDemoApp\MSBuild</_MSBuildForUnityGeneratedOutputDirectory>
+    <_MSBuildForUnityGeneratedOutputDirectory>D:\Workspace\louiekuo\_Github\AltasHandDemoApp\MSBuild</_MSBuildForUnityGeneratedOutputDirectory>
     <MSBuildForUnityGeneratedProjectDirectory>$(_MSBuildForUnityGeneratedOutputDirectory)\Projects</MSBuildForUnityGeneratedProjectDirectory>
   </PropertyGroup>
   
@@ -23,7 +23,7 @@
     
     <UnityMajorVersion>2018</UnityMajorVersion>
     <UnityMinorVersion>4</UnityMinorVersion>
-    <UnityEditorInstallPath>C:\Program Files\Unity\Hub\Editor\2018.4.25f1\Editor</UnityEditorInstallPath>
+    <UnityEditorInstallPath>D:\Program Files\2018.4.25f1\Editor</UnityEditorInstallPath>
   </PropertyGroup>
   
   <PropertyGroup>

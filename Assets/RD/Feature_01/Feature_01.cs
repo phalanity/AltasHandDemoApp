@@ -23,11 +23,13 @@ public class Feature_01 : MonoBehaviour
 
 	private Dictionary<string, GameObject> mPrefabsFingerTexture;
 	private List<FingerPrefabObject> mLeftFingerPrefabs;
+	private List<FingerPrefabObject> mRightFingerPrefabs;
 
 	// Start is called before the first frame update
 	void Start()
     {
 		mLeftFingerPrefabs = new List<FingerPrefabObject>();
+		mRightFingerPrefabs = new List<FingerPrefabObject>();
 
 		mPrefabsFingerTexture = new Dictionary<string, GameObject>();
 		mPrefabsFingerTexture.Add("Palm", gPrefabPalm);
@@ -84,6 +86,34 @@ public class Feature_01 : MonoBehaviour
 			}
 		}
 
+
+		// right hand
+		if (rightHand != null && !mFIsRightHandScanned)
+		{
+			Debug.Log("right hand show up");
+			mFIsRightHandScanned = true;
+
+			CreateFingerTextureObjects(rightHand, false);
+		}
+		if (rightHand == null && mFIsRightHandScanned)
+		{
+			Debug.Log("right hand disappear");
+			mFIsRightHandScanned = false;
+
+			foreach (FingerPrefabObject obj in mRightFingerPrefabs)
+			{
+				Destroy(obj.Prefab);
+			}
+			mRightFingerPrefabs.Clear();
+		}
+		if (rightHand != null)
+		{
+			foreach (FingerPrefabObject obj in mRightFingerPrefabs)
+			{
+				obj.Prefab.transform.position = obj.RotationBase.transform.position;
+				obj.Prefab.transform.rotation = Quaternion.LookRotation(obj.RotationTarget.transform.position - obj.RotationBase.transform.position, obj.RotationBase.transform.rotation * Vector3.up);
+			}
+		}
 	}
 
 
@@ -189,6 +219,14 @@ public class Feature_01 : MonoBehaviour
 			if(jointObj != null)
 			{
 				GameObject texObj = Instantiate(mPrefabsFingerTexture[key], jointObj.transform.position, jointObj.transform.rotation);
+				if (!IsLeftHand)
+				{
+					texObj.transform.localScale = new Vector3(
+						texObj.transform.localScale.x * -1,
+						texObj.transform.localScale.y,
+						texObj.transform.localScale.z);
+				}
+
 				GameObject nextJointObj = null;
 				FindNextJoint(Hand, jointObj, out nextJointObj);
 

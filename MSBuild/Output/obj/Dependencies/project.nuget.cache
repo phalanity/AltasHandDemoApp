@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ATn7/xAUC1nIsWNU/qOk/5sZ0dIhW3dot9iwjSrreI9m0OW9vk5Gtssy8fwYnaAEWj7b+CVo6gmOyh9zYvVHxw==",
+  "dgSpecHash": "VdFfd3hrT70lEzbNApfh14nfjIMLQiqgQ0bC2BwbJ/VUNfouBnELpJLwOrPTrw9ejjBqHpzeoCfZIySpGes/2A==",
   "success": true,
-  "projectFilePath": "D:\\workspace\\Unity\\AltasHandDemoApp\\Assets\\HololensTest_Unity2018.Dependencies.msb4u.csproj",
+  "projectFilePath": "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\HololensTest_Unity2018.Dependencies.msb4u.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\123\\.nuget\\packages\\microsoft.windows.mixedreality.dotnetwinrt\\0.5.1049\\microsoft.windows.mixedreality.dotnetwinrt.0.5.1049.nupkg.sha512",
-    "C:\\Users\\123\\.nuget\\packages\\msbuildforunity\\0.9.1-123842\\msbuildforunity.0.9.1-123842.nupkg.sha512",
-    "C:\\Users\\123\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\system.drawing.primitives.4.3.0.nupkg.sha512"
+    "C:\\Users\\Username\\.nuget\\packages\\microsoft.windows.mixedreality.dotnetwinrt\\0.5.1049\\microsoft.windows.mixedreality.dotnetwinrt.0.5.1049.nupkg.sha512",
+    "C:\\Users\\Username\\.nuget\\packages\\msbuildforunity\\0.9.1-123842\\msbuildforunity.0.9.1-123842.nupkg.sha512",
+    "C:\\Users\\Username\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\system.drawing.primitives.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

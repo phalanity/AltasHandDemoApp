@@ -157,24 +157,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\123\\.nuget\\packages\\": {},
+    "C:\\Users\\Username\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\workspace\\Unity\\AltasHandDemoApp\\Assets\\HololensTest_Unity2018.Dependencies.msb4u.csproj",
+      "projectUniqueName": "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\HololensTest_Unity2018.Dependencies.msb4u.csproj",
       "projectName": "HololensTest_Unity2018.Dependencies.msb4u",
-      "projectPath": "D:\\workspace\\Unity\\AltasHandDemoApp\\Assets\\HololensTest_Unity2018.Dependencies.msb4u.csproj",
-      "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-      "outputPath": "D:\\workspace\\Unity\\AltasHandDemoApp\\MSBuild\\Output\\obj\\Dependencies\\",
+      "projectPath": "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\HololensTest_Unity2018.Dependencies.msb4u.csproj",
+      "packagesPath": "C:\\Users\\Username\\.nuget\\packages\\",
+      "outputPath": "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\MSBuild\\Output\\obj\\Dependencies\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "D:\\workspace\\Unity\\AltasHandDemoApp\\Assets\\NuGet.Config",
-        "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\NuGet.Config",
+        "C:\\Users\\Username\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -188,8 +188,8 @@
       "frameworks": {
         "net46": {
           "projectReferences": {
-            "D:\\workspace\\Unity\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
-              "projectPath": "D:\\workspace\\Unity\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+            "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
+              "projectPath": "D:\\Workspace\\louiekuo\\_Github\\AltasHandDemoApp\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
               "privateAssets": "analyzers"
             }
           }
@@ -211,7 +211,7 @@
             "version": "[0.9.1-*, 0.9.1]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
