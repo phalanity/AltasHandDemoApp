@@ -79,21 +79,26 @@ public class Feature_01 : MonoBehaviour
 		}
 		if (leftHand != null)
 		{
+			bool isResetTextureObjects = (mLeftFingerPrefabs.Count == 0);
 			foreach (FingerPrefabObject obj in mLeftFingerPrefabs)
 			{
 				if(obj.RotationBase == null || obj.RotationTarget == null)
 				{
-					foreach (FingerPrefabObject objDelete in mLeftFingerPrefabs)
-					{
-						Destroy(objDelete.Prefab);
-					}
-					mLeftFingerPrefabs.Clear();
-
-					CreateFingerTextureObjects(leftHand, true);
+					isResetTextureObjects = true;
 					break;
 				}
 				obj.Prefab.transform.position = obj.RotationBase.transform.position;
 				obj.Prefab.transform.rotation = Quaternion.LookRotation(obj.RotationTarget.transform.position - obj.RotationBase.transform.position, obj.RotationBase.transform.rotation * Vector3.up);
+			}
+			if (isResetTextureObjects)
+			{
+				foreach (FingerPrefabObject objDelete in mLeftFingerPrefabs)
+				{
+					Destroy(objDelete.Prefab);
+				}
+				mLeftFingerPrefabs.Clear();
+
+				CreateFingerTextureObjects(leftHand, true);
 			}
 		}
 
@@ -119,20 +124,25 @@ public class Feature_01 : MonoBehaviour
 		}
 		if (rightHand != null)
 		{
+			bool isResetTextureObjects = (mRightFingerPrefabs.Count == 0);
 			foreach (FingerPrefabObject obj in mRightFingerPrefabs)
 			{
 				if (obj.RotationBase == null || obj.RotationTarget == null)
 				{
-					foreach (FingerPrefabObject objDelete in mRightFingerPrefabs)
-					{
-						Destroy(objDelete.Prefab);
-					}
-					mRightFingerPrefabs.Clear();
-					CreateFingerTextureObjects(rightHand, false);
+					isResetTextureObjects = true;
 					break;
 				}
 				obj.Prefab.transform.position = obj.RotationBase.transform.position;
 				obj.Prefab.transform.rotation = Quaternion.LookRotation(obj.RotationTarget.transform.position - obj.RotationBase.transform.position, obj.RotationBase.transform.rotation * Vector3.up);
+			}
+			if(isResetTextureObjects)
+			{
+				foreach (FingerPrefabObject objDelete in mRightFingerPrefabs)
+				{
+					Destroy(objDelete.Prefab);
+				}
+				mRightFingerPrefabs.Clear();
+				CreateFingerTextureObjects(rightHand, false);
 			}
 		}
 	}
@@ -240,6 +250,7 @@ public class Feature_01 : MonoBehaviour
 			if(jointObj != null)
 			{
 				GameObject texObj = Instantiate(mPrefabsFingerTexture[key], jointObj.transform.position, jointObj.transform.rotation);
+				texObj.name += IsLeftHand ? "_Left" : "_Right";
 				if (!IsLeftHand)
 				{
 					texObj.transform.localScale = new Vector3(
@@ -258,7 +269,14 @@ public class Feature_01 : MonoBehaviour
 					fingerPrefabObject.RotationBase = jointObj;
 					fingerPrefabObject.RotationTarget = nextJointObj;
 
-					mLeftFingerPrefabs.Add(fingerPrefabObject);
+					if (IsLeftHand)
+					{
+						mLeftFingerPrefabs.Add(fingerPrefabObject);
+					}
+					else
+					{
+						mRightFingerPrefabs.Add(fingerPrefabObject);
+					}
 				}
 				if (jointObj.name.ToLower().Contains("Palm".ToLower()))
 				{
