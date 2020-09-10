@@ -264,7 +264,7 @@
       <HintPath>Assets/Dependencies/net46/System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:\Program Files\2018.4.25f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>

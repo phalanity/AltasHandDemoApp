@@ -67,7 +67,7 @@
     <Compile Include="Assets\MRTK\Extensions\HandPhysicsService\Interfaces\IHandPhysicsService.cs" />
     <Compile Include="Assets\MRTK\Extensions\HandPhysicsService\JointKinematicBody.cs" />
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/2018.4.25f1/Editor/Data/PlaybackEngines/MetroSupport/Tools/UnityEngine.AIModule.dll</HintPath>
@@ -301,25 +301,25 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Primitives">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Assets/Dependencies/net46/System.Drawing.Primitives.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Assets/Dependencies/net46/System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Windows.MixedReality.DotNetWinRT">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Assets/Dependencies/net46/InEditor/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Assets/Dependencies/net46/InEditor/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Program Files/2018.4.25f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

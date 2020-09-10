@@ -127,28 +127,28 @@
     <None Include="Assets\MRTK\Extensions\License.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="MSBuildForUnity">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/ScriptAssemblies/MSBuildForUnity.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/ScriptAssemblies/MSBuildForUnity.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.WindowsMR.Editor">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.WindowsMR">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/ScriptAssemblies/Unity.XR.WindowsMR.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/ScriptAssemblies/Unity.XR.WindowsMR.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/2018.4.25f1/Editor/Data/PlaybackEngines/MetroSupport/Tools/UnityEngine.AIModule.dll</HintPath>
@@ -349,13 +349,13 @@
       <HintPath>D:/Program Files/2018.4.25f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Primitives">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Assets/Dependencies/net46/System.Drawing.Primitives.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Assets/Dependencies/net46/System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Windows.MixedReality.DotNetWinRT">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Assets/Dependencies/net46/InEditor/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Assets/Dependencies/net46/InEditor/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/Workspace/louiekuo/_Github/_Test/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/Workspace/louiekuo/_Github/AltasHandDemoApp/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Program Files/2018.4.25f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

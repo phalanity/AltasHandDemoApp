@@ -81,6 +81,17 @@ public class Feature_01 : MonoBehaviour
 		{
 			foreach (FingerPrefabObject obj in mLeftFingerPrefabs)
 			{
+				if(obj.RotationBase == null || obj.RotationTarget == null)
+				{
+					foreach (FingerPrefabObject objDelete in mLeftFingerPrefabs)
+					{
+						Destroy(objDelete.Prefab);
+					}
+					mLeftFingerPrefabs.Clear();
+
+					CreateFingerTextureObjects(leftHand, true);
+					break;
+				}
 				obj.Prefab.transform.position = obj.RotationBase.transform.position;
 				obj.Prefab.transform.rotation = Quaternion.LookRotation(obj.RotationTarget.transform.position - obj.RotationBase.transform.position, obj.RotationBase.transform.rotation * Vector3.up);
 			}
@@ -110,6 +121,16 @@ public class Feature_01 : MonoBehaviour
 		{
 			foreach (FingerPrefabObject obj in mRightFingerPrefabs)
 			{
+				if (obj.RotationBase == null || obj.RotationTarget == null)
+				{
+					foreach (FingerPrefabObject objDelete in mRightFingerPrefabs)
+					{
+						Destroy(objDelete.Prefab);
+					}
+					mRightFingerPrefabs.Clear();
+					CreateFingerTextureObjects(rightHand, false);
+					break;
+				}
 				obj.Prefab.transform.position = obj.RotationBase.transform.position;
 				obj.Prefab.transform.rotation = Quaternion.LookRotation(obj.RotationTarget.transform.position - obj.RotationBase.transform.position, obj.RotationBase.transform.rotation * Vector3.up);
 			}
